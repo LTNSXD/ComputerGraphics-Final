@@ -46,10 +46,6 @@ SceneParser::SceneParser(const char *filename) {
     parseFile();
     fclose(file);
     file = nullptr;
-
-    if (num_lights == 0) {
-        printf("WARNING:    No lights specified\n");
-    }
 }
 
 SceneParser::~SceneParser() {
@@ -239,13 +235,17 @@ Material *SceneParser::parseMaterial() {
     char token[MAX_PARSER_TOKEN_LENGTH];
     char filename[MAX_PARSER_TOKEN_LENGTH];
     filename[0] = 0;
-    Vector3f diffuseColor(1, 1, 1), specularColor(0, 0, 0);
+    Vector3f ambientColor(0, 0, 0), diffuseColor(1, 1, 1), specularColor(0, 0, 0);
+    int refl_t = DIFF;
+    double refr = 1.0;
     float shininess = 0;
     getToken(token);
     assert (!strcmp(token, "{"));
     while (true) {
         getToken(token);
-        if (strcmp(token, "diffuseColor") == 0) {
+        if (strcmp(token, "emission") == 0) {
+            ambientColor = readVector3f();
+        } else if (strcmp(token, "color") == 0) {
             diffuseColor = readVector3f();
         } else if (strcmp(token, "specularColor") == 0) {
             specularColor = readVector3f();
@@ -254,12 +254,16 @@ Material *SceneParser::parseMaterial() {
         } else if (strcmp(token, "texture") == 0) {
             // Optional: read in texture and draw it.
             getToken(filename);
+        } else if (strcmp(token, "type") == 0) {
+            refl_t = readInt();
+        } else if (strcmp(token, "refr") == 0) {
+            refr = readFloat();
         } else {
             assert (!strcmp(token, "}"));
             break;
         }
     }
-    auto *answer = new Material(diffuseColor, specularColor, shininess);
+    auto *answer = new Material(ambientColor, diffuseColor, specularColor, refl_t, refr);
     return answer;
 }
 

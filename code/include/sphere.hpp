@@ -41,8 +41,10 @@ public:
         // Vector3f intersection = r.pointAtParameter(t);
         Vector3f intersection = r.getOrigin() + t * r.getDirection().normalized();
         Vector3f N = ((l.squaredLength() > radius * radius ? 1 : -1) * (intersection - center)).normalized();
+        bool into = l.squaredLength() > radius * radius;
+        t = t / r.getDirection().length();
         if (t < h.getT() && t > tmin) {
-            h.set(t, material, N);
+            h.set(t, material, N, into);
             return true;
         }
         else {

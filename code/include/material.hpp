@@ -8,13 +8,19 @@
 #include "hit.hpp"
 #include <iostream>
 
+#define DIFF    0
+#define SPEC    1
+#define REFR    2
 
 // TODO: Implement Shade function that computes Phong introduced in class.
 class Material {
 public:
 
-    explicit Material(const Vector3f &d_color, const Vector3f &s_color = Vector3f::ZERO, float s = 0) :
-            diffuseColor(d_color), specularColor(s_color), shininess(s) {
+    explicit Material(const Vector3f &a_color, 
+                      const Vector3f &d_color, 
+                      const Vector3f &s_color = Vector3f::ZERO, 
+                      int refl_t = DIFF, double refr_index = 1.0 /* 折射率 */) :
+            ambientColor(a_color), diffuseColor(d_color), specularColor(s_color), reflectionType(refl_t), refractiveIndex(refr_index) {
 
     }
 
@@ -24,19 +30,24 @@ public:
         return diffuseColor;
     }
 
+    virtual Vector3f getAmbientColor() const {
+        return ambientColor;
+    }
 
-    Vector3f Shade(const Ray &ray, const Hit &hit,
-                   const Vector3f &dirToLight, const Vector3f &lightColor) {
-        Vector3f shaded = Vector3f::ZERO;
-        Vector3f R = 2 * Vector3f::dot(hit.getNormal(), dirToLight) * hit.getNormal() - dirToLight;
-        shaded += lightColor * diffuseColor * fmax(Vector3f::dot(dirToLight, hit.getNormal()), (float)0) + lightColor * specularColor * pow(fmax(Vector3f::dot(- ray.getDirection().normalized(), R), (float)0), shininess);
-        return shaded;
+    virtual int getReflectionType() const {
+        return reflectionType;
+    }
+
+    virtual double getRefractiveIndex() const {
+        return refractiveIndex;
     }
 
 protected:
+    int reflectionType;
+    double refractiveIndex;
+    Vector3f ambientColor;
     Vector3f diffuseColor;
     Vector3f specularColor;
-    float shininess;
 };
 
 

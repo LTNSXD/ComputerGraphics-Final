@@ -42,16 +42,22 @@ public:
         return normal;
     }
 
-    void set(float _t, Material *m, const Vector3f &n) {
+    const bool getInto() const {
+        return into;
+    }
+
+    void set(float _t, Material *m, const Vector3f &n, bool _into = false) {
         t = _t;
         material = m;
         normal = n;
+        into = _into;
     }
 
 private:
     float t;
     Material *material;
     Vector3f normal;
+    bool into; /* 光线是否在内部 */
 
 };
 

@@ -43,6 +43,10 @@ public:
         return (int)objects.size();
     }
 
+    Object3D* getItem(int index) {
+        return objects[index];
+    }
+
 private:
     std::vector<Object3D*> objects;
 };

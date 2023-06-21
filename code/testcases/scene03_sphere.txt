@@ -22,7 +22,7 @@ Background {
 Materials {
     numMaterials 1
     Material { 
-	diffuseColor 1 1 1
+	    color 1 1 1
     }
 }
 

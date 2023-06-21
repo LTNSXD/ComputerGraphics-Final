@@ -439,4 +439,7 @@ CMakeFiles/FINAL.dir/src/main.cpp.o: \
   /Users/wangjuanli/Codefield/CG/Final/code/include/material.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/wangjuanli/Codefield/CG/Final/code/include/light.hpp
+  /Users/wangjuanli/Codefield/CG/Final/code/include/light.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/smallpt.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric
