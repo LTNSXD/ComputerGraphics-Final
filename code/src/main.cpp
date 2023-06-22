@@ -11,6 +11,7 @@
 #include "group.hpp"
 #include "light.hpp"
 #include "smallpt.hpp"
+#include "ppm.hpp"
 
 #include <string>
 
@@ -22,7 +23,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (argc != 3) {
-        cout << "Usage: ./bin/PA1 <input scene file> <output bmp file>" << endl;
+        cout << "Usage: ./bin/FINAL <input scene file> <output bmp file>" << endl;
         return 1;
     }
     string inputFile = argv[1];
@@ -30,7 +31,7 @@ int main(int argc, char *argv[]) {
 
     SceneParser sceneParser(argv[1]);
     SmallPT *pt = new SmallPT();
-    Image image = pt->PathTrace(sceneParser, 1000);
+    Image image = pt->PathTrace(sceneParser, 1);
     image.SaveImage(argv[2]);
     return 0;
 }

@@ -14,6 +14,8 @@ class Plane;
 class Triangle;
 class Transform;
 class Mesh;
+class Curve;
+class RevSurface;
 
 #define MAX_PARSER_TOKEN_LENGTH 1024
 
@@ -37,7 +39,7 @@ public:
         return num_lights;
     }
 
-    Light *getLight(int i) const {
+    Sphere *getLight(int i) const {
         assert(i >= 0 && i < num_lights);
         return lights[i];
     }
@@ -72,6 +74,9 @@ private:
     Triangle *parseTriangle();
     Mesh *parseTriangleMesh();
     Transform *parseTransform();
+    Curve *parseBezierCurve();
+    Curve *parseBsplineCurve();
+    RevSurface *parseRevSurface();
 
     int getToken(char token[MAX_PARSER_TOKEN_LENGTH]);
 
@@ -84,7 +89,7 @@ private:
     Camera *camera;
     Vector3f background_color;
     int num_lights;
-    Light **lights;
+    Sphere **lights;
     int num_materials;
     Material **materials;
     Material *current_material;

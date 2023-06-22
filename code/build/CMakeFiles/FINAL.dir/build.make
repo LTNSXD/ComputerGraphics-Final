@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wangjuanli/Codefield/CG/Final/code
+CMAKE_SOURCE_DIR = /Users/wangjuanli/Codefield/CG/final/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wangjuanli/Codefield/CG/Final/code/build
+CMAKE_BINARY_DIR = /Users/wangjuanli/Codefield/CG/final/code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FINAL.dir/depend.make
@@ -70,67 +70,82 @@ include CMakeFiles/FINAL.dir/progress.make
 include CMakeFiles/FINAL.dir/flags.make
 
 CMakeFiles/FINAL.dir/src/image.cpp.o: CMakeFiles/FINAL.dir/flags.make
-CMakeFiles/FINAL.dir/src/image.cpp.o: /Users/wangjuanli/Codefield/CG/Final/code/src/image.cpp
+CMakeFiles/FINAL.dir/src/image.cpp.o: /Users/wangjuanli/Codefield/CG/final/code/src/image.cpp
 CMakeFiles/FINAL.dir/src/image.cpp.o: CMakeFiles/FINAL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FINAL.dir/src/image.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/image.cpp.o -MF CMakeFiles/FINAL.dir/src/image.cpp.o.d -o CMakeFiles/FINAL.dir/src/image.cpp.o -c /Users/wangjuanli/Codefield/CG/Final/code/src/image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FINAL.dir/src/image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/image.cpp.o -MF CMakeFiles/FINAL.dir/src/image.cpp.o.d -o CMakeFiles/FINAL.dir/src/image.cpp.o -c /Users/wangjuanli/Codefield/CG/final/code/src/image.cpp
 
 CMakeFiles/FINAL.dir/src/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FINAL.dir/src/image.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/Final/code/src/image.cpp > CMakeFiles/FINAL.dir/src/image.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/final/code/src/image.cpp > CMakeFiles/FINAL.dir/src/image.cpp.i
 
 CMakeFiles/FINAL.dir/src/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FINAL.dir/src/image.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/Final/code/src/image.cpp -o CMakeFiles/FINAL.dir/src/image.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/final/code/src/image.cpp -o CMakeFiles/FINAL.dir/src/image.cpp.s
 
 CMakeFiles/FINAL.dir/src/main.cpp.o: CMakeFiles/FINAL.dir/flags.make
-CMakeFiles/FINAL.dir/src/main.cpp.o: /Users/wangjuanli/Codefield/CG/Final/code/src/main.cpp
+CMakeFiles/FINAL.dir/src/main.cpp.o: /Users/wangjuanli/Codefield/CG/final/code/src/main.cpp
 CMakeFiles/FINAL.dir/src/main.cpp.o: CMakeFiles/FINAL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FINAL.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/main.cpp.o -MF CMakeFiles/FINAL.dir/src/main.cpp.o.d -o CMakeFiles/FINAL.dir/src/main.cpp.o -c /Users/wangjuanli/Codefield/CG/Final/code/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FINAL.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/main.cpp.o -MF CMakeFiles/FINAL.dir/src/main.cpp.o.d -o CMakeFiles/FINAL.dir/src/main.cpp.o -c /Users/wangjuanli/Codefield/CG/final/code/src/main.cpp
 
 CMakeFiles/FINAL.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FINAL.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/Final/code/src/main.cpp > CMakeFiles/FINAL.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/final/code/src/main.cpp > CMakeFiles/FINAL.dir/src/main.cpp.i
 
 CMakeFiles/FINAL.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FINAL.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/Final/code/src/main.cpp -o CMakeFiles/FINAL.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/final/code/src/main.cpp -o CMakeFiles/FINAL.dir/src/main.cpp.s
 
 CMakeFiles/FINAL.dir/src/mesh.cpp.o: CMakeFiles/FINAL.dir/flags.make
-CMakeFiles/FINAL.dir/src/mesh.cpp.o: /Users/wangjuanli/Codefield/CG/Final/code/src/mesh.cpp
+CMakeFiles/FINAL.dir/src/mesh.cpp.o: /Users/wangjuanli/Codefield/CG/final/code/src/mesh.cpp
 CMakeFiles/FINAL.dir/src/mesh.cpp.o: CMakeFiles/FINAL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FINAL.dir/src/mesh.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/mesh.cpp.o -MF CMakeFiles/FINAL.dir/src/mesh.cpp.o.d -o CMakeFiles/FINAL.dir/src/mesh.cpp.o -c /Users/wangjuanli/Codefield/CG/Final/code/src/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FINAL.dir/src/mesh.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/mesh.cpp.o -MF CMakeFiles/FINAL.dir/src/mesh.cpp.o.d -o CMakeFiles/FINAL.dir/src/mesh.cpp.o -c /Users/wangjuanli/Codefield/CG/final/code/src/mesh.cpp
 
 CMakeFiles/FINAL.dir/src/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FINAL.dir/src/mesh.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/Final/code/src/mesh.cpp > CMakeFiles/FINAL.dir/src/mesh.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/final/code/src/mesh.cpp > CMakeFiles/FINAL.dir/src/mesh.cpp.i
 
 CMakeFiles/FINAL.dir/src/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FINAL.dir/src/mesh.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/Final/code/src/mesh.cpp -o CMakeFiles/FINAL.dir/src/mesh.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/final/code/src/mesh.cpp -o CMakeFiles/FINAL.dir/src/mesh.cpp.s
 
 CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: CMakeFiles/FINAL.dir/flags.make
-CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: /Users/wangjuanli/Codefield/CG/Final/code/src/scene_parser.cpp
+CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: /Users/wangjuanli/Codefield/CG/final/code/src/scene_parser.cpp
 CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: CMakeFiles/FINAL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FINAL.dir/src/scene_parser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/scene_parser.cpp.o -MF CMakeFiles/FINAL.dir/src/scene_parser.cpp.o.d -o CMakeFiles/FINAL.dir/src/scene_parser.cpp.o -c /Users/wangjuanli/Codefield/CG/Final/code/src/scene_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FINAL.dir/src/scene_parser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/scene_parser.cpp.o -MF CMakeFiles/FINAL.dir/src/scene_parser.cpp.o.d -o CMakeFiles/FINAL.dir/src/scene_parser.cpp.o -c /Users/wangjuanli/Codefield/CG/final/code/src/scene_parser.cpp
 
 CMakeFiles/FINAL.dir/src/scene_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FINAL.dir/src/scene_parser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/Final/code/src/scene_parser.cpp > CMakeFiles/FINAL.dir/src/scene_parser.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/final/code/src/scene_parser.cpp > CMakeFiles/FINAL.dir/src/scene_parser.cpp.i
 
 CMakeFiles/FINAL.dir/src/scene_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FINAL.dir/src/scene_parser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/Final/code/src/scene_parser.cpp -o CMakeFiles/FINAL.dir/src/scene_parser.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/final/code/src/scene_parser.cpp -o CMakeFiles/FINAL.dir/src/scene_parser.cpp.s
+
+CMakeFiles/FINAL.dir/src/utils.cpp.o: CMakeFiles/FINAL.dir/flags.make
+CMakeFiles/FINAL.dir/src/utils.cpp.o: /Users/wangjuanli/Codefield/CG/final/code/src/utils.cpp
+CMakeFiles/FINAL.dir/src/utils.cpp.o: CMakeFiles/FINAL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FINAL.dir/src/utils.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FINAL.dir/src/utils.cpp.o -MF CMakeFiles/FINAL.dir/src/utils.cpp.o.d -o CMakeFiles/FINAL.dir/src/utils.cpp.o -c /Users/wangjuanli/Codefield/CG/final/code/src/utils.cpp
+
+CMakeFiles/FINAL.dir/src/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FINAL.dir/src/utils.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangjuanli/Codefield/CG/final/code/src/utils.cpp > CMakeFiles/FINAL.dir/src/utils.cpp.i
+
+CMakeFiles/FINAL.dir/src/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FINAL.dir/src/utils.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangjuanli/Codefield/CG/final/code/src/utils.cpp -o CMakeFiles/FINAL.dir/src/utils.cpp.s
 
 # Object files for target FINAL
 FINAL_OBJECTS = \
 "CMakeFiles/FINAL.dir/src/image.cpp.o" \
 "CMakeFiles/FINAL.dir/src/main.cpp.o" \
 "CMakeFiles/FINAL.dir/src/mesh.cpp.o" \
-"CMakeFiles/FINAL.dir/src/scene_parser.cpp.o"
+"CMakeFiles/FINAL.dir/src/scene_parser.cpp.o" \
+"CMakeFiles/FINAL.dir/src/utils.cpp.o"
 
 # External object files for target FINAL
 FINAL_EXTERNAL_OBJECTS =
@@ -139,10 +154,12 @@ FINAL: CMakeFiles/FINAL.dir/src/image.cpp.o
 FINAL: CMakeFiles/FINAL.dir/src/main.cpp.o
 FINAL: CMakeFiles/FINAL.dir/src/mesh.cpp.o
 FINAL: CMakeFiles/FINAL.dir/src/scene_parser.cpp.o
+FINAL: CMakeFiles/FINAL.dir/src/utils.cpp.o
 FINAL: CMakeFiles/FINAL.dir/build.make
 FINAL: deps/vecmath/libvecmath.a
+FINAL: /opt/homebrew/Cellar/libomp/16.0.6/lib/libomp.dylib
 FINAL: CMakeFiles/FINAL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable FINAL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable FINAL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FINAL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +171,6 @@ CMakeFiles/FINAL.dir/clean:
 .PHONY : CMakeFiles/FINAL.dir/clean
 
 CMakeFiles/FINAL.dir/depend:
-	cd /Users/wangjuanli/Codefield/CG/Final/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/wangjuanli/Codefield/CG/Final/code /Users/wangjuanli/Codefield/CG/Final/code /Users/wangjuanli/Codefield/CG/Final/code/build /Users/wangjuanli/Codefield/CG/Final/code/build /Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles/FINAL.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/wangjuanli/Codefield/CG/final/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/wangjuanli/Codefield/CG/final/code /Users/wangjuanli/Codefield/CG/final/code /Users/wangjuanli/Codefield/CG/final/code/build /Users/wangjuanli/Codefield/CG/final/code/build /Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles/FINAL.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/FINAL.dir/depend
 

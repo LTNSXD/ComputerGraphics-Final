@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wangjuanli/Codefield/CG/Final/code
+CMAKE_SOURCE_DIR = /Users/wangjuanli/Codefield/CG/final/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wangjuanli/Codefield/CG/Final/code/build
+CMAKE_BINARY_DIR = /Users/wangjuanli/Codefield/CG/final/code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles /Users/wangjuanli/Codefield/CG/Final/code/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles /Users/wangjuanli/Codefield/CG/final/code/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -238,6 +238,30 @@ src/scene_parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/scene_parser.cpp.s
 .PHONY : src/scene_parser.cpp.s
 
+src/utils.o: src/utils.cpp.o
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -260,6 +284,9 @@ help:
 	@echo "... src/scene_parser.o"
 	@echo "... src/scene_parser.i"
 	@echo "... src/scene_parser.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 

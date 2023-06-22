@@ -97,6 +97,12 @@ Vector3f operator * ( float f, const Vector3f& v );
 Vector3f operator * ( const Vector3f& v, float f );
 Vector3f operator / ( const Vector3f& v, float f );
 
+// add and minus by scalar
+Vector3f operator + ( float f, const Vector3f& v );
+Vector3f operator + ( const Vector3f&v, float f );
+Vector3f operator - ( float f, const Vector3f& v );
+Vector3f operator - ( const Vector3f&v, float f );
+
 bool operator == ( const Vector3f& v0, const Vector3f& v1 );
 bool operator != ( const Vector3f& v0, const Vector3f& v1 );
 

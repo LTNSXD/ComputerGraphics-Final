@@ -311,6 +311,26 @@ Vector3f operator / ( const Vector3f& v, float f )
     return Vector3f( v[0] / f, v[1] / f, v[2] / f );
 }
 
+Vector3f operator + ( float f, const Vector3f& v )
+{
+	return v + Vector3f(f, f, f);
+}
+
+Vector3f operator + ( const Vector3f&v, float f )
+{
+	return v + Vector3f(f, f, f);
+}
+
+Vector3f operator - ( float f, const Vector3f& v )
+{
+	return Vector3f(f, f, f) - v;
+}
+
+Vector3f operator - ( const Vector3f&v, float f )
+{
+	return v - Vector3f(f, f, f);
+}
+
 bool operator == ( const Vector3f& v0, const Vector3f& v1 )
 {
     return( v0.x() == v1.x() && v0.y() == v1.y() && v0.z() == v1.z() );

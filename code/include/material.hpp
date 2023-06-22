@@ -8,11 +8,10 @@
 #include "hit.hpp"
 #include <iostream>
 
-#define DIFF    0
-#define SPEC    1
-#define REFR    2
+#define DIFF    0  // 漫反射
+#define SPEC    1  // 镜面反射
+#define REFR    2  // 折射
 
-// TODO: Implement Shade function that computes Phong introduced in class.
 class Material {
 public:
 

@@ -20,6 +20,27 @@ public:
 		vertices[2] = c;
 		// 
 		normal = Vector3f::cross((b - a), (c - a)).normalized();
+		double min_arr[3], max_arr[3];
+    	for (int i = 0; i < 3; ++i) {
+        	min_arr[i] = min(min(a[i], b[i]), c[i]);
+        	max_arr[i] = max(max(a[i], b[i]), c[i]);
+    	}
+    	Vector3f l(min_arr[0], min_arr[1], min_arr[2]), r(max_arr[0], max_arr[1], max_arr[2]);
+    	setAABB(l, r);
+	}
+
+	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, const Vector3f& n, Material* m) : Object3D(m) {
+		vertices[0] = a;
+		vertices[1] = b;
+		vertices[2] = c;
+		normal = n;
+		double min_arr[3], max_arr[3];
+    	for (int i = 0; i < 3; ++i) {
+        	min_arr[i] = min(min(a[i], b[i]), c[i]);
+        	max_arr[i] = max(max(a[i], b[i]), c[i]);
+    	}
+    	Vector3f l(min_arr[0], min_arr[1], min_arr[2]), r(max_arr[0], max_arr[1], max_arr[2]);
+    	setAABB(l, r);
 	}
 
 	bool intersect( const Ray& ray,  Hit& hit , float tmin) override {

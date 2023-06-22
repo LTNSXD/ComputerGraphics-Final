@@ -46,7 +46,7 @@ public:
         return into;
     }
 
-    void set(float _t, Material *m, const Vector3f &n, bool _into = false) {
+    void set(float _t, Material *m, const Vector3f &n, bool _into = true) {
         t = _t;
         material = m;
         normal = n;

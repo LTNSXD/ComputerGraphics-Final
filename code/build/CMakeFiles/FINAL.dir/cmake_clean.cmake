@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FINAL.dir/src/mesh.cpp.o.d"
   "CMakeFiles/FINAL.dir/src/scene_parser.cpp.o"
   "CMakeFiles/FINAL.dir/src/scene_parser.cpp.o.d"
+  "CMakeFiles/FINAL.dir/src/utils.cpp.o"
+  "CMakeFiles/FINAL.dir/src/utils.cpp.o.d"
   "FINAL"
   "FINAL.pdb"
 )

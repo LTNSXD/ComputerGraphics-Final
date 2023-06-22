@@ -16,7 +16,7 @@ public:
         radius = 1;
     }
 
-    Sphere(const Vector3f &center, float radius, Material *material) : Object3D(material), center(center), radius(radius) {
+    Sphere(const Vector3f &center, float radius, Material *material) : Object3D(material, center - radius * 1.415, center + radius * 1.415), center(center), radius(radius) {
 
     }
 
@@ -51,6 +51,10 @@ public:
             return false;
         }
     }
+
+    Vector3f getCenter() const { return center; }
+
+    float getRadius() const { return radius; }
 
 protected:
     Vector3f center;
