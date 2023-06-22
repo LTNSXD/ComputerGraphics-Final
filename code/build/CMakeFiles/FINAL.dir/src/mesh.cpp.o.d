@@ -355,9 +355,12 @@ CMakeFiles/FINAL.dir/src/mesh.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Users/wangjuanli/Codefield/CG/final/code/include/object3d.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/ray.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ios \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__locale \
+  /Users/wangjuanli/Codefield/CG/final/code/include/utils.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string_view \
@@ -369,6 +372,17 @@ CMakeFiles/FINAL.dir/src/mesh.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/vecmath.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix2f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix3f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix4f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Quat4f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector3f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector4f.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__locale \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/mutex \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mutex_base \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/system_error \
@@ -420,23 +434,9 @@ CMakeFiles/FINAL.dir/src/mesh.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector3f.h \
   /Users/wangjuanli/Codefield/CG/final/code/include/hit.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/vecmath.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix2f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix3f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Quat4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector4f.h \
   /Users/wangjuanli/Codefield/CG/final/code/include/material.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/aabb.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/utils.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /Users/wangjuanli/Codefield/CG/final/code/include/triangle.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/kdtree.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/tiny_obj_loader.h \

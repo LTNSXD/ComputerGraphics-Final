@@ -86,16 +86,16 @@ Group {
     
     MaterialIndex 4
     Transform {
-        Translate 30 -5 112
-        Scale 20 20 20
+        Translate 30 -8 112
+        Scale 110 110 110
         XRotate 0
         TriangleMesh {
-            obj_file mesh/dragon.obj
+            obj_file mesh/bunny_1k.obj
         }
     }
     MaterialIndex 7
     Sphere {
-    center 27 16.5 47
+    center 27 46.5 47
         radius 16.5
     }
     MaterialIndex 6

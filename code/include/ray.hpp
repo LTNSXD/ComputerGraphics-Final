@@ -1,6 +1,8 @@
 #ifndef RAY_H
 #define RAY_H
 
+
+#include "utils.hpp"
 #include <cassert>
 #include <iostream>
 #include <Vector3f.h>
@@ -14,11 +16,17 @@ public:
     Ray(const Vector3f &orig, const Vector3f &dir) {
         origin = orig;
         direction = dir;
+        rdirection.x() = direction.x() == 0 ? INF : 1 / direction.x();
+        rdirection.y() = direction.y() == 0 ? INF : 1 / direction.y();
+        rdirection.z() = direction.z() == 0 ? INF : 1 / direction.z();
     }
 
     Ray(const Ray &r) {
         origin = r.origin;
         direction = r.direction;
+        rdirection.x() = direction.x() == 0 ? INF : 1 / direction.x();
+        rdirection.y() = direction.y() == 0 ? INF : 1 / direction.y();
+        rdirection.z() = direction.z() == 0 ? INF : 1 / direction.z();
     }
 
     const Vector3f &getOrigin() const {
@@ -29,6 +37,10 @@ public:
         return direction;
     }
 
+    const Vector3f &getRdirection() const {
+        return rdirection;
+    }
+
     Vector3f pointAtParameter(float t) const {
         return origin + direction * t;
     }
@@ -37,6 +49,7 @@ private:
 
     Vector3f origin;
     Vector3f direction;
+    Vector3f rdirection; 
 
 };
 

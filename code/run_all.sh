@@ -13,5 +13,5 @@ cmake --build build
 # You can comment some lines to disable the run of specific examples.
 mkdir -p output
 # build/FINAL testcases/scene01.txt output/scene01.bmp
-build/FINAL testcases/scene02.txt output/scene02.bmp
-# build/FINAL testcases/scene03.txt output/scene03.bmp
+# build/FINAL testcases/scene02.txt output/scene02.bmp
+build/FINAL testcases/scene03.txt output/scene03.bmp

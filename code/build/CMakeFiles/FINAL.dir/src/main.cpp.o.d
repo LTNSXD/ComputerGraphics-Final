@@ -430,6 +430,11 @@ CMakeFiles/FINAL.dir/src/main.cpp.o: \
   /Users/wangjuanli/Codefield/CG/final/code/include/image.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/camera.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/ray.hpp \
+  /Users/wangjuanli/Codefield/CG/final/code/include/utils.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/float.h \
@@ -438,11 +443,6 @@ CMakeFiles/FINAL.dir/src/main.cpp.o: \
   /Users/wangjuanli/Codefield/CG/final/code/include/hit.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/material.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/aabb.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/utils.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Users/wangjuanli/Codefield/CG/final/code/include/kdtree.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/light.hpp \
   /Users/wangjuanli/Codefield/CG/final/code/include/smallpt.hpp \
