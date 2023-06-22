@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 
     SceneParser sceneParser(argv[1]);
     SmallPT *pt = new SmallPT();
-    Image image = pt->PathTrace(sceneParser, 4);
+    Image image = pt->PathTrace(sceneParser, 25);
     image.SaveImage(argv[2]);
     return 0;
 }

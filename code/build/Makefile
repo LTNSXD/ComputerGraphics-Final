@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wangjuanli/Codefield/CG/final/code
+CMAKE_SOURCE_DIR = /Users/wangjuanli/Codefield/CG/Final/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wangjuanli/Codefield/CG/final/code/build
+CMAKE_BINARY_DIR = /Users/wangjuanli/Codefield/CG/Final/code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles /Users/wangjuanli/Codefield/CG/final/code/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles /Users/wangjuanli/Codefield/CG/Final/code/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/final/code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangjuanli/Codefield/CG/Final/code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -214,6 +214,30 @@ src/mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/mesh.cpp.s
 .PHONY : src/mesh.cpp.s
 
+src/revsurface.o: src/revsurface.cpp.o
+.PHONY : src/revsurface.o
+
+# target to build an object file
+src/revsurface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/revsurface.cpp.o
+.PHONY : src/revsurface.cpp.o
+
+src/revsurface.i: src/revsurface.cpp.i
+.PHONY : src/revsurface.i
+
+# target to preprocess a source file
+src/revsurface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/revsurface.cpp.i
+.PHONY : src/revsurface.cpp.i
+
+src/revsurface.s: src/revsurface.cpp.s
+.PHONY : src/revsurface.s
+
+# target to generate assembly for a file
+src/revsurface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FINAL.dir/build.make CMakeFiles/FINAL.dir/src/revsurface.cpp.s
+.PHONY : src/revsurface.cpp.s
+
 src/scene_parser.o: src/scene_parser.cpp.o
 .PHONY : src/scene_parser.o
 
@@ -281,6 +305,9 @@ help:
 	@echo "... src/mesh.o"
 	@echo "... src/mesh.i"
 	@echo "... src/mesh.s"
+	@echo "... src/revsurface.o"
+	@echo "... src/revsurface.i"
+	@echo "... src/revsurface.s"
 	@echo "... src/scene_parser.o"
 	@echo "... src/scene_parser.i"
 	@echo "... src/scene_parser.s"

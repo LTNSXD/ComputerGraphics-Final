@@ -1,4 +1,4 @@
-# Install script for directory: /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath
+# Install script for directory: /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

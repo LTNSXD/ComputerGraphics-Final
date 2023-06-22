@@ -85,7 +85,7 @@ Group {
     
     MaterialIndex 6
     Transform {
-        Scale 7 7 7
+        Scale 6 6 6
         Translate 2.7 2.5 15
         XRotate 0
         RevSurface {
@@ -124,7 +124,7 @@ Group {
 
     MaterialIndex 4
     Transform {
-        Scale 7 7 7
+        Scale 6 6 6
         Translate 8 2.5 15
         XRotate 0
         RevSurface {
@@ -163,7 +163,7 @@ Group {
 
     MaterialIndex 7
     Transform {
-        Scale 7 7 7
+        Scale 6 6 6
         Translate 13.3 2.5 15
         XRotate 0
         RevSurface {
