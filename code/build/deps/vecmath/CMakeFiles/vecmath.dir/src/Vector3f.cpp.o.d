@@ -1,5 +1,5 @@
 deps/vecmath/CMakeFiles/vecmath.dir/src/Vector3f.cpp.o: \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/src/Vector3f.cpp \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/src/Vector3f.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -93,5 +93,5 @@ deps/vecmath/CMakeFiles/vecmath.dir/src/Vector3f.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_off_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ssize_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdlib \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector3f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector2f.h
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector3f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h

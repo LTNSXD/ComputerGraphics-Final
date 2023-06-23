@@ -14,7 +14,9 @@ public:
 	Triangle() = delete;
 
     // a b c are three vertex positions of the triangle
-	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, Material* m) : Object3D(m) {
+	// 自动计算法向量的版本
+	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, Material* m,
+			  const Vector2f& text_a = Vector2f::ZERO, const Vector2f& text_b = Vector2f::ZERO, const Vector2f& text_c = Vector2f::ZERO) : Object3D(m) {
 		vertices[0] = a;
 		vertices[1] = b;
 		vertices[2] = c;
@@ -27,9 +29,15 @@ public:
     	}
     	Vector3f l(min_arr[0], min_arr[1], min_arr[2]), r(max_arr[0], max_arr[1], max_arr[2]);
     	setAABB(l, r);
+
+		// texture settings
+		text_pos[0] = text_a;
+		text_pos[1] = text_b;
+		text_pos[2] = text_c;
 	}
 
-	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, const Vector3f& n, Material* m) : Object3D(m) {
+	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, const Vector3f& n, Material* m,
+			  const Vector2f& text_a = Vector2f::ZERO, const Vector2f& text_b = Vector2f::ZERO, const Vector2f& text_c = Vector2f::ZERO) : Object3D(m) {
 		vertices[0] = a;
 		vertices[1] = b;
 		vertices[2] = c;
@@ -41,6 +49,10 @@ public:
     	}
     	Vector3f l(min_arr[0], min_arr[1], min_arr[2]), r(max_arr[0], max_arr[1], max_arr[2]);
     	setAABB(l, r);
+		// texture settings
+		text_pos[0] = text_a;
+		text_pos[1] = text_b;
+		text_pos[2] = text_c;
 	}
 
 	bool intersect( const Ray& ray,  Hit& hit , float tmin) override {
@@ -76,6 +88,7 @@ public:
 	}
 	Vector3f normal;
 	Vector3f vertices[3];
+	Vector2f text_pos[3];
 protected:
 
 };

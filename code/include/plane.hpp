@@ -5,10 +5,6 @@
 #include <vecmath.h>
 #include <cmath>
 
-// TODO: Implement Plane representing an infinite plane
-// function: ax+by+cz=d
-// choose your representation , add more fields and fill in the functions
-
 class Plane : public Object3D {
 public:
     Plane() = delete;
@@ -19,11 +15,24 @@ public:
 
     ~Plane() override = default;
 
+
+    // 采用循环的材质
+    Vector2f getPos(const Vector3f &m_pos) {
+        Vector2f pos;
+        if (fabs(normal.y()) > .1) { pos = m_pos.xz(); }
+        else if (fabs(normal.x() > .1)) { pos = m_pos.yz(); }
+        else { pos = m_pos.xy(); }
+        return pos;
+    }
+
     bool intersect(const Ray &r, Hit &h, float tmin) override {
         Vector3f R0 = r.getOrigin(), Rd = r.getDirection();
         float t = - ( - d + Vector3f::dot(normal, R0)) / (Vector3f::dot(normal, Rd));
         if (t >= 0 && t > tmin && t < h.getT()) {
-            h.set(t, material, normal);
+            Vector3f N = Vector3f::dot(normal, Rd) > 0 ? -normal : normal;
+            Vector3f m_pos = r.pointAtParameter(t);
+            Vector2f pos = getPos(m_pos);
+            h.set(t, material, N, true, pos / 125.0);
             return true;
         }
         else {

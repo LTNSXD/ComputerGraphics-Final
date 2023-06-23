@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
+#include <iostream>
 
 #include "image.hpp"
 
@@ -175,6 +176,49 @@ Image* Image::LoadPPM(const char *filename) {
     }
     fclose(file);
     return answer;
+}
+
+
+// Reference: https://github.com/g4197/Computer-Graphics-Pub/blob/a06b8114c10cd958e7263ca54d13d69c008fbc66/Final/code/src/image.cpp
+Image* Image::LoadBMP(const char *filename) {
+    unsigned int components = 3; // RGB
+    FILE *f = fopen(filename, "rb");
+    assert(f);
+    unsigned char bmp_file_header[14];
+    unsigned char bmp_info_header[40];
+    unsigned char bmp_pad[3];
+    unsigned char data[3];
+
+    unsigned int w, h;
+    size_t sz = 0;
+
+    memset(bmp_file_header, 0, sizeof(bmp_file_header));
+    memset(bmp_info_header, 0, sizeof(bmp_info_header));
+    sz = fread(bmp_file_header, sizeof(bmp_file_header), 1, f);
+    assert(sz != 0);
+    sz = fread(bmp_info_header, sizeof(bmp_info_header), 1, f);
+    assert(sz != 0);
+    assert((bmp_file_header[0] == 'B') && (bmp_file_header[1] == 'M'));
+    assert((bmp_info_header[14] == 24) || (bmp_info_header[14] == 32));
+
+    w = (bmp_info_header[4] + (bmp_info_header[5] << 8) + (bmp_info_header[6] << 16) + (bmp_info_header[7] << 24));
+    h = (bmp_info_header[8] + (bmp_info_header[9] << 8) + (bmp_info_header[10] << 16) + (bmp_info_header[11] << 24));
+    Image *img = new Image(w, h);
+    if ((w > 0) && (h > 0)) {
+        assert(data != NULL);
+        for (int y = 0; y < h; y++) {
+            for (int x = 0; x < w; x++) {
+                sz = fread(data, 3, 1, f);
+                assert(sz != 0);
+                img->SetPixel(x, y, Vector3f(data[2] / 255.0, data[1] / 255.0, data[0] / 255.0));
+            }
+            int padding = ((4 - (w * 3) % 4) % 4);
+            sz = fread(bmp_pad, 1, padding, f);
+            assert(sz == padding);
+        }
+    }
+    fclose(f);
+    return img;
 }
 
 /****************************************************************************

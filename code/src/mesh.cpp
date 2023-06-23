@@ -64,11 +64,11 @@ Mesh::Mesh(const char *filename, Material *material) : Object3D(material) {
                 }
             }
             
-            // 
+            // Ensure that normal != (0, 0, 0)
             if (normal != Vector3f::ZERO) {
-                this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], normal, this->material));
+                this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], normal, this->material, texcoord[0], texcoord[1], texcoord[2]));
             } else {
-                this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], this->material));
+                this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], this->material, texcoord[0], texcoord[1], texcoord[2]));
             }
             
             index_offset += fv;

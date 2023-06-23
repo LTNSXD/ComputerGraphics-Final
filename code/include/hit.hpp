@@ -46,11 +46,16 @@ public:
         return into;
     }
 
-    void set(float _t, Material *m, const Vector3f &n, bool _into = true) {
+    const Vector2f getPos() const {
+        return text_pos;
+    }
+
+    void set(float _t, Material *m, const Vector3f &n, bool _into = true, const Vector2f &pos = Vector2f()) {
         t = _t;
         material = m;
         normal = n;
         into = _into;
+        text_pos = pos;
     }
 
 private:
@@ -58,6 +63,7 @@ private:
     Material *material;
     Vector3f normal;
     bool into; /* 光线是否在内部 */
+    Vector2f text_pos; /* 纹理坐标 */
 
 };
 

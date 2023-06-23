@@ -37,7 +37,7 @@ public:
         Vector3f x = r.pointAtParameter(hit.getT());
         Vector3f nl = hit.getNormal();
         Vector3f n = hit.getInto() ? nl : -nl;
-        Vector3f f = hit.getMaterial()->getDiffuseColor();
+        Vector3f f = hit.getMaterial()->_getDiffuseColor(hit);
         double p = max(f);
 
         if (++depth > 5) {

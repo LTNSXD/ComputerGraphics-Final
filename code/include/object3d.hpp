@@ -23,6 +23,10 @@ public:
         this->aabb = AABB(ld, ru);
     }
 
+    void setVelocity(const Vector3f &v) {
+        this->velocity = v;
+    }
+
     AABB getAABB() {
         return aabb;
     }
@@ -38,6 +42,7 @@ public:
 protected:
     AABB aabb;
     Material *material;
+    Vector3f velocity = Vector3f::ZERO;
 };
 
 #endif

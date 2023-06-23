@@ -12,7 +12,7 @@ Background {
 }
 
 Materials {
-    numMaterials 8
+    numMaterials 9
     Material { 
         diffuseColor 0.75 0.25 0.25
         type 0
@@ -47,6 +47,11 @@ Materials {
     Material {
         diffuseColor 1 1 1
         type 1
+    }
+    Material { 
+        diffuseColor 0.75 0.75 0.75 
+        type 0
+        texture texture/wood.bmp
     }
     
 }

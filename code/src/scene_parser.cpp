@@ -103,6 +103,7 @@ void SceneParser::parseFile() {
 
 void SceneParser::parsePerspectiveCamera() {
     char token[MAX_PARSER_TOKEN_LENGTH];
+    float focal = 1.0, aperture = 0.0; /* 景深 */
     // read in the camera parameters
     getToken(token);
     assert (!strcmp(token, "{"));
@@ -125,9 +126,18 @@ void SceneParser::parsePerspectiveCamera() {
     getToken(token);
     assert (!strcmp(token, "height"));
     int height = readInt();
-    getToken(token);
-    assert (!strcmp(token, "}"));
-    camera = new PerspectiveCamera(center, direction, up, width, height, angle_radians);
+    while (true) {
+        getToken(token);
+        if (!strcmp(token, "}")) {
+            break;
+        } else if (!strcmp(token, "focal")) {
+            focal = readFloat();
+        } else if (!strcmp(token, "aperture")) {
+            aperture = readFloat();
+        }
+    }
+    // assert (!strcmp(token, "}"));
+    camera = new LensCamera(center, direction, up, width, height, angle_radians, focal, aperture);
 }
 
 void SceneParser::parseBackground() {
@@ -256,7 +266,7 @@ Material *SceneParser::parseMaterial() {
         } else if (strcmp(token, "shininess") == 0) {
             shininess = readFloat();
         } else if (strcmp(token, "texture") == 0) {
-            // Optional: read in texture and draw it.
+            // I'm here!
             getToken(filename);
         } else if (strcmp(token, "type") == 0) {
             refl_t = readInt();
@@ -267,7 +277,7 @@ Material *SceneParser::parseMaterial() {
             break;
         }
     }
-    auto *answer = new Material(ambientColor, diffuseColor, specularColor, refl_t, refr);
+    auto *answer = new Material(filename, ambientColor, diffuseColor, specularColor, refl_t, refr);
     return answer;
 }
 
@@ -352,6 +362,7 @@ Group *SceneParser::parseGroup() {
 // ====================================================================
 
 Sphere *SceneParser::parseSphere() {
+    Vector3f velocity = Vector3f::ZERO;
     char token[MAX_PARSER_TOKEN_LENGTH];
     getToken(token);
     assert (!strcmp(token, "{"));
@@ -361,10 +372,16 @@ Sphere *SceneParser::parseSphere() {
     getToken(token);
     assert (!strcmp(token, "radius"));
     float radius = readFloat();
-    getToken(token);
-    assert (!strcmp(token, "}"));
-    assert (current_material != nullptr);
-    return new Sphere(center, radius, current_material);
+    while (true) {
+        getToken(token);
+        if (!strcmp(token, "}")) {
+            break;
+        } else if (!strcmp(token, "Velocity")) {
+            velocity = readVector3f();
+        }
+        assert (current_material != nullptr);
+    }
+    return new Sphere(center, radius, current_material, velocity);
 }
 
 

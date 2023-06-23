@@ -28,14 +28,14 @@ public:
     }
 
     bool intersect(const Ray &r, Hit &h, float tmin) override {
-        // bool result = false;
-        // for (int i = 0; i < getGroupSize(); ++i) {
-        //     result |= objects[i]->intersect(r, h, tmin);
-        // }
-        // return result;
-
-        bool result = tree->intersect(r, h, tmin);
+        bool result = false;
+        for (int i = 0; i < getGroupSize(); ++i) {
+            result |= objects[i]->intersect(r, h, tmin);
+        }
         return result;
+
+        // bool result = tree->intersect(r, h, tmin);
+        // return result;
     }
 
     void addObject(int index, Object3D *obj) {

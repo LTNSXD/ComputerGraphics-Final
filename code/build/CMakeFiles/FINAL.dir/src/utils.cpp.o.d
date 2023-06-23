@@ -1,6 +1,6 @@
 CMakeFiles/FINAL.dir/src/utils.cpp.o: \
-  /Users/wangjuanli/Codefield/CG/Final/code/src/utils.cpp \
-  /Users/wangjuanli/Codefield/CG/Final/code/include/utils.hpp \
+  /Users/wangjuanli/Codefield/CG/final/code/src/utils.cpp \
+  /Users/wangjuanli/Codefield/CG/final/code/include/utils.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -369,11 +369,11 @@ CMakeFiles/FINAL.dir/src/utils.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/vecmath.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix2f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix3f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix4f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Quat4f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector2f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector3f.h \
-  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector4f.h
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/vecmath.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix2f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix3f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix4f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Quat4f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector3f.h \
+  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector4f.h
