@@ -1,5 +1,5 @@
 CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: \
-  /Users/wangjuanli/Codefield/CG/final/code/src/scene_parser.cpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/src/scene_parser.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -99,20 +99,20 @@ CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/move.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits \
-  /Users/wangjuanli/Codefield/CG/final/code/include/scene_parser.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/scene_parser.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/assert.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/vecmath.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix2f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix3f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Quat4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector3f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/include/camera.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/ray.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/utils.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/vecmath.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix2f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix3f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix4f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Quat4f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector2f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector3f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector4f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/camera.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/ray.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/utils.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
@@ -437,25 +437,25 @@ CMakeFiles/FINAL.dir/src/scene_parser.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/float.h \
-  /Users/wangjuanli/Codefield/CG/final/code/include/light.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/object3d.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/hit.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/material.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/texture.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/image.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/aabb.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/group.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/kdtree.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/mesh.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/triangle.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/tiny_obj_loader.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/light.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/object3d.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/hit.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/material.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/texture.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/image.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/aabb.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/group.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/kdtree.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/mesh.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/triangle.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/tiny_obj_loader.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
-  /Users/wangjuanli/Codefield/CG/final/code/include/sphere.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/plane.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/transform.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/curve.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/include/revsurface.hpp
+  /Users/wangjuanli/Codefield/CG/Final/code/include/sphere.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/plane.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/transform.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/curve.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/revsurface.hpp

@@ -1,6 +1,6 @@
 deps/vecmath/CMakeFiles/vecmath.dir/src/Matrix2f.cpp.o: \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/src/Matrix2f.cpp \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix2f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/src/Matrix2f.cpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix2f.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -101,4 +101,4 @@ deps/vecmath/CMakeFiles/vecmath.dir/src/Matrix2f.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector2f.h

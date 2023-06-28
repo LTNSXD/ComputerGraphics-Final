@@ -13,13 +13,13 @@ Background {
 }
 
 Materials {
-    numMaterials 8
+    numMaterials 10
     Material { 
         diffuseColor 0.75 0.25 0.25
         type 0
     }
     Material { 
-        diffuseColor 0.25 0.25 0.75 
+        diffuseColor 0.25 0.25 0.75
         type 0
     }
     Material { 
@@ -31,11 +31,12 @@ Materials {
         type 0
     }
     Material {
-        diffuseColor 1 1 1
-        type 1
+        diffuseColor 0.9 0.8 0.8
+        type 0
+        bump texture/bump.bmp
     }
     Material {
-        diffuseColor 1 1 1
+        diffuseColor 0.5 0.5 0.5
         type 2
         refr 1.5
     }
@@ -47,12 +48,20 @@ Materials {
     Material { 
         diffuseColor 0.75 0.75 0.75 
         type 0
-        texture texture/greenbg.bmp
+    }
+    Material {
+        diffuseColor 0.6863 0.933 0.933
+        type 0
+    }
+    Material {
+        diffuseColor 0 0 0
+        type 0
+        texture texture/wood.bmp
     }
 }
 
 Group {
-    numObjects 9
+    numObjects 8
     MaterialIndex 0
     Plane {
         normal 1 0 0
@@ -63,7 +72,7 @@ Group {
         normal -1 0 0
         offset -99 
     }
-    MaterialIndex 7
+    MaterialIndex 2
     Plane {
         normal 0 0 1
         offset 0
@@ -90,13 +99,7 @@ Group {
     }
     MaterialIndex 4
     Sphere {
-        center 27 46.5 47
-        radius 16.5
-        Velocity 5 5 5
-    }
-    MaterialIndex 5
-    Sphere {
-    center 73 16.5 78
-        radius 16.5
+        center 50 35 80
+        radius 25
     }
 }

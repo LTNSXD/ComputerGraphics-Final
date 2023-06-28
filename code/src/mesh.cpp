@@ -37,9 +37,10 @@ Mesh::Mesh(const char *filename, Material *material) : Object3D(material) {
         for (size_t f = 0; f < shapes[s].mesh.num_face_vertices.size(); ++f) {
             size_t fv = size_t(shapes[s].mesh.num_face_vertices[f]);
             // assert(fv == 3);
-            Vector3f vertices[3], normal = Vector3f::ZERO;
+            Vector3f vertices[3], normal[3];
             Vector2f texcoord[3];
             // Loop over vertices in the face.
+            bool hasN = false;
             for (size_t v = 0; v < 3; ++v) {
                 // access to vertex
                 tinyobj::index_t idx = shapes[s].mesh.indices[index_offset + v];
@@ -50,10 +51,11 @@ Mesh::Mesh(const char *filename, Material *material) : Object3D(material) {
 
                 // Check if `normal_index` is zero or positive. negative = no normal data
                 if (idx.normal_index >= 0) {
+                    hasN = true;
                     tinyobj::real_t nx = attrib.normals[3 * size_t(idx.normal_index) + 0];
                     tinyobj::real_t ny = attrib.normals[3 * size_t(idx.normal_index) + 1];
                     tinyobj::real_t nz = attrib.normals[3 * size_t(idx.normal_index) + 2];
-                    normal = Vector3f(nx, ny, nz);
+                    normal[v] = Vector3f(nx, ny, nz);
                 }
 
                 // Check if `texcoord_index` is zero or positive. negative = no texcoord data
@@ -63,10 +65,9 @@ Mesh::Mesh(const char *filename, Material *material) : Object3D(material) {
                     texcoord[v] = Vector2f(tx, ty);
                 }
             }
-            
-            // Ensure that normal != (0, 0, 0)
-            if (normal != Vector3f::ZERO) {
-                this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], normal, this->material, texcoord[0], texcoord[1], texcoord[2]));
+            // 
+            if (hasN) {
+                this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], this->material, normal[0], normal[1], normal[2], texcoord[0], texcoord[1], texcoord[2]));
             } else {
                 this->triangles.push_back(new Triangle(vertices[0], vertices[1], vertices[2], this->material, texcoord[0], texcoord[1], texcoord[2]));
             }
@@ -77,6 +78,7 @@ Mesh::Mesh(const char *filename, Material *material) : Object3D(material) {
             shapes[s].mesh.material_ids[f];
         }
     }
+
     // Build Tree
     tree = new KDTree(this->triangles);
 }

@@ -32,7 +32,7 @@ public:
             Vector3f N = Vector3f::dot(normal, Rd) > 0 ? -normal : normal;
             Vector3f m_pos = r.pointAtParameter(t);
             Vector2f pos = getPos(m_pos);
-            h.set(t, material, N, true, pos / 125.0);
+            h.set(t, material, N, true, pos / 90.0);
             return true;
         }
         else {

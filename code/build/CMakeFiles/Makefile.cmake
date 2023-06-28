@@ -83,10 +83,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/Platform/UnixPaths.cmake"
-  "/Users/wangjuanli/Codefield/CG/final/code/CMakeLists.txt"
+  "/Users/wangjuanli/Codefield/CG/Final/code/CMakeLists.txt"
   "CMakeFiles/3.26.0-rc6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.0-rc6/CMakeSystem.cmake"
-  "/Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/CMakeLists.txt"
+  "/Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/CMakeLists.txt"
   )
 
 # The corresponding makefile is:

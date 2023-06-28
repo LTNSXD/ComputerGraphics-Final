@@ -52,12 +52,26 @@ public:
         bool into = l.squaredLength() > radius * radius;
         t = t / r.getDirection().length();
         if (t < h.getT() && t > tmin) {
-            h.set(t, material, N, into);
+            double u = .5 + atan2(N.x(), N.z()) / (2 * M_PI);
+            double v = .5 - asin(N.y()) / M_PI;
+            Vector3f _N = CalNormal(N, origin + r.getDirection() * t - center, u, v);
+            h.set(t, material, _N, into, Vector2f(u, v));
             return true;
         }
         else {
             return false;
         }
+    }
+
+    Vector3f CalNormal(const Vector3f &n, const Vector3f &p, double u, double v) {
+        Vector2f grad;
+        if (material->getBump() == nullptr) { return n; }
+        double f = material->getBump()->getDisturb(u, v, grad);
+        if (fabs(f) < 1e-4) { return n; }
+        double phi = u * 2 * M_PI, theta = M_PI - v * M_PI;
+        Vector3f pu(-p.z(), 0, p.x()), pv(p.y() * cos(phi), -radius * sin(theta), p.y() * sin(phi));
+        if (pu.squaredLength() < 1e-4) { return n; }
+        return Vector3f::cross(pu + n * grad[0] / (2 * M_PI), pv + n * grad[1] / M_PI).normalized();
     }
 
     Vector3f getCenter() const { return center; }

@@ -13,10 +13,10 @@ class Triangle: public Object3D {
 public:
 	Triangle() = delete;
 
-    // a b c are three vertex positions of the triangle
-	// 自动计算法向量的版本
 	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, Material* m,
+			  const Vector3f& norm_a, const Vector3f& norm_b, const Vector3f& norm_c,
 			  const Vector2f& text_a = Vector2f::ZERO, const Vector2f& text_b = Vector2f::ZERO, const Vector2f& text_c = Vector2f::ZERO) : Object3D(m) {
+		isInter = true;
 		vertices[0] = a;
 		vertices[1] = b;
 		vertices[2] = c;
@@ -34,14 +34,24 @@ public:
 		text_pos[0] = text_a;
 		text_pos[1] = text_b;
 		text_pos[2] = text_c;
+
+		// norm settings
+		normals[0] = norm_a;
+		normals[1] = norm_b;
+		normals[2] = norm_c;
+
 	}
 
-	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, const Vector3f& n, Material* m,
+    // a b c are three vertex positions of the triangle
+	// 自动计算法向量的版本
+	Triangle( const Vector3f& a, const Vector3f& b, const Vector3f& c, Material* m,
 			  const Vector2f& text_a = Vector2f::ZERO, const Vector2f& text_b = Vector2f::ZERO, const Vector2f& text_c = Vector2f::ZERO) : Object3D(m) {
+		isInter = false;
 		vertices[0] = a;
 		vertices[1] = b;
 		vertices[2] = c;
-		normal = n;
+		// 
+		normal = Vector3f::cross((b - a), (c - a)).normalized();
 		double min_arr[3], max_arr[3];
     	for (int i = 0; i < 3; ++i) {
         	min_arr[i] = min(min(a[i], b[i]), c[i]);
@@ -49,6 +59,7 @@ public:
     	}
     	Vector3f l(min_arr[0], min_arr[1], min_arr[2]), r(max_arr[0], max_arr[1], max_arr[2]);
     	setAABB(l, r);
+
 		// texture settings
 		text_pos[0] = text_a;
 		text_pos[1] = text_b;
@@ -79,7 +90,10 @@ public:
 		if (0 < t && 0 < beta && 0 < gamma && beta < 1 && gamma < 1 && beta + gamma < 1 && 
 			t < hit.getT() && tmin < t) {
 			Vector3f N = (Vector3f::dot(normal, ray.getDirection()) < 0) ? normal : - normal;
-			hit.set(t, material, N);
+			Vector3f _N;
+			if (isInter) { _N = get_Norm(ray.pointAtParameter(t)); }
+			else { _N = N; }
+			hit.set(t, material, _N);
 			return true;
 		}
 		else {
@@ -89,6 +103,18 @@ public:
 	Vector3f normal;
 	Vector3f vertices[3];
 	Vector2f text_pos[3];
+	// 法向量插值
+	Vector3f normals[3];
+	bool isInter;
+
+	Vector3f get_Norm(const Vector3f &p) {
+		Vector3f a = vertices[0] - p, b = vertices[1] - p, c = vertices[2] - p;
+		double sa = Vector3f::cross(b, c).length();
+		double sb = Vector3f::cross(c, a).length();
+		double sc = Vector3f::cross(a, b).length();
+		return sa * normals[0] + sb * normals[1] + sc * normals[2];
+	}
+
 protected:
 
 };

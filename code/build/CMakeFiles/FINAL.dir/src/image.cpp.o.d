@@ -1,5 +1,5 @@
 CMakeFiles/FINAL.dir/src/image.cpp.o: \
-  /Users/wangjuanli/Codefield/CG/final/code/src/image.cpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/src/image.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdlib \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -415,15 +415,15 @@ CMakeFiles/FINAL.dir/src/image.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/wangjuanli/Codefield/CG/final/code/include/image.hpp \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/vecmath.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix2f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix3f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Matrix4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Quat4f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector2f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/include/image.hpp \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/vecmath.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix2f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix3f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Matrix4f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Quat4f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector2f.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector3f.h \
-  /Users/wangjuanli/Codefield/CG/final/code/deps/vecmath/include/Vector4f.h
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector3f.h \
+  /Users/wangjuanli/Codefield/CG/Final/code/deps/vecmath/include/Vector4f.h

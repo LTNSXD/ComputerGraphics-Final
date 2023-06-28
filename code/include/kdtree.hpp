@@ -42,6 +42,8 @@ public:
     Object3D *build(int depth, int l, int r, std::vector<Object3D *> &objects) {
         if (l == r) { return objects[l]; }
         int m = (l + r) >> 1, depth_mod_3 = depth % 3;
+        // STL: nth_element 
+        // Reference : https://www.cnblogs.com/zzzlight/p/14298223.html
         nth_element(
             objects.begin() + l, objects.begin() + m, objects.begin() + r, 
             [depth_mod_3] (Object3D *x, Object3D *y) {

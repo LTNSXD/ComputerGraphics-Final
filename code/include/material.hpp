@@ -16,7 +16,7 @@
 class Material {
 public:
 
-    explicit Material(const char *filename, /* 纹理 */
+    explicit Material(const char *filename, /* 纹理 */ const char *bumpname, /* 凹凸 */
                       const Vector3f &a_color, 
                       const Vector3f &d_color, 
                       const Vector3f &s_color = Vector3f::ZERO, 
@@ -25,6 +25,10 @@ public:
         if (filename[0] == '\0') { texture = nullptr; }
         else {
             texture = new Texture(filename);
+        }
+        if (bumpname[0] == '\0') { bump = nullptr; }
+        else {
+            bump = new Texture(bumpname);
         }
     }
 
@@ -53,13 +57,21 @@ public:
         return refractiveIndex;
     }
 
+    Texture *getTexture() {
+        return texture;
+    }
+
+    Texture *getBump() {
+        return bump;
+    }
+
 protected:
     int reflectionType;
     double refractiveIndex;
     Vector3f ambientColor;
     Vector3f diffuseColor;
     Vector3f specularColor;
-    Texture *texture;
+    Texture *texture, *bump;
 };
 
 

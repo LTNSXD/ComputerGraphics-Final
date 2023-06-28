@@ -137,7 +137,7 @@ void SceneParser::parsePerspectiveCamera() {
         }
     }
     // assert (!strcmp(token, "}"));
-    camera = new LensCamera(center, direction, up, width, height, angle_radians, focal, aperture);
+    camera = new PerspectiveCamera(center, direction, up, width, height, angle_radians, focal, aperture);
 }
 
 void SceneParser::parseBackground() {
@@ -248,7 +248,9 @@ void SceneParser::parseMaterials() {
 Material *SceneParser::parseMaterial() {
     char token[MAX_PARSER_TOKEN_LENGTH];
     char filename[MAX_PARSER_TOKEN_LENGTH];
+    char bumpname[MAX_PARSER_TOKEN_LENGTH];
     filename[0] = 0;
+    bumpname[0] = 0;
     Vector3f ambientColor(0, 0, 0), diffuseColor(1, 1, 1), specularColor(0, 0, 0);
     int refl_t = DIFF;
     double refr = 1.0;
@@ -268,6 +270,8 @@ Material *SceneParser::parseMaterial() {
         } else if (strcmp(token, "texture") == 0) {
             // I'm here!
             getToken(filename);
+        } else if (strcmp(token, "bump") == 0) {
+            getToken(bumpname);
         } else if (strcmp(token, "type") == 0) {
             refl_t = readInt();
         } else if (strcmp(token, "refr") == 0) {
@@ -277,7 +281,7 @@ Material *SceneParser::parseMaterial() {
             break;
         }
     }
-    auto *answer = new Material(filename, ambientColor, diffuseColor, specularColor, refl_t, refr);
+    auto *answer = new Material(filename, bumpname, ambientColor, diffuseColor, specularColor, refl_t, refr);
     return answer;
 }
 

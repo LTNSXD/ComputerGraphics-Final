@@ -11,7 +11,6 @@
 #include "group.hpp"
 #include "light.hpp"
 #include "smallpt.hpp"
-#include "ppm.hpp"
 
 #include <string>
 
@@ -31,7 +30,7 @@ int main(int argc, char *argv[]) {
 
     SceneParser sceneParser(argv[1]);
     SmallPT *pt = new SmallPT();
-    Image image = pt->PathTrace(sceneParser, 200);
+    Image image = pt->PathTrace(sceneParser, 1); /* modify spp here */
     image.SaveImage(argv[2]);
     return 0;
 }
